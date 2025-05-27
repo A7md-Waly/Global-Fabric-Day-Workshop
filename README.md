@@ -11,6 +11,8 @@ This repository contains the dataset used in the hands-on exercises with **Micro
 You can connect or download the dataset directly in Microsoft Fabric using the **Web API** option:
 
 🔗 [Download Banking_Analytics_Dataset.xlsx](https://raw.githubusercontent.com/A7md-Waly/FabricWorkshop/main/Banking_Analytics_Dataset.xlsx)
+🔗 [Download Customers.xml](https://raw.githubusercontent.com/A7md-Waly/FabricWorkshop/main/Customers.xml)
+
 
 > 📌 **Note:** This link is intended for use within Microsoft Fabric when connecting to a dataset using **Web API**.
 
