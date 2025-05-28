@@ -1,0 +1,55 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.12.2
+model_size_bytes: 30021
+model_uuid: 93087046bb054db4bb5379ec5e59ce97
+run_id: bf31c4e3-7e90-4af8-b953-9a68ced2d926
+signature:
+  inputs: '[{"type": "double", "name": "tenure_days", "required": true}, {"type":
+    "double", "name": "num_business_accounts", "required": true}, {"type": "double",
+    "name": "avg_balance", "required": true}, {"type": "double", "name": "max_account_age_days",
+    "required": true}, {"type": "double", "name": "days_since_last_balance_update",
+    "required": true}, {"type": "double", "name": "days_since_last_transaction", "required":
+    true}, {"type": "double", "name": "avg_interest_rate", "required": true}, {"type":
+    "double", "name": "max_loan_duration_days", "required": true}, {"type": "double",
+    "name": "max_days_to_card_expiry", "required": true}, {"type": "double", "name":
+    "state_code", "required": true}, {"type": "double", "name": "num_accounts", "required":
+    true}, {"type": "double", "name": "total_balance", "required": true}, {"type":
+    "double", "name": "num_savings_accounts", "required": true}, {"type": "double",
+    "name": "num_checking_accounts", "required": true}, {"type": "double", "name":
+    "total_num_transactions", "required": true}, {"type": "double", "name": "total_transaction_amount",
+    "required": true}, {"type": "double", "name": "total_deposits", "required": true},
+    {"type": "double", "name": "total_withdrawals", "required": true}, {"type": "double",
+    "name": "total_transfers", "required": true}, {"type": "double", "name": "total_payments",
+    "required": true}, {"type": "double", "name": "num_loans", "required": true},
+    {"type": "double", "name": "total_loan_amount", "required": true}, {"type": "double",
+    "name": "num_car_loans", "required": true}, {"type": "double", "name": "num_personal_loans",
+    "required": true}, {"type": "double", "name": "num_home_loans", "required": true},
+    {"type": "double", "name": "num_education_loans", "required": true}, {"type":
+    "double", "name": "days_to_loan_end", "required": true}, {"type": "double", "name":
+    "num_cards", "required": true}, {"type": "double", "name": "num_credit_cards",
+    "required": true}, {"type": "double", "name": "num_debit_cards", "required": true},
+    {"type": "double", "name": "num_prepaid_cards", "required": true}, {"type": "double",
+    "name": "num_support_calls", "required": true}, {"type": "double", "name": "num_transaction_disputes",
+    "required": true}, {"type": "double", "name": "num_loan_queries", "required":
+    true}, {"type": "double", "name": "num_card_issues", "required": true}, {"type":
+    "double", "name": "num_account_access_issues", "required": true}, {"type": "double",
+    "name": "num_resolved_calls", "required": true}, {"type": "double", "name": "days_since_last_resolved_call",
+    "required": true}, {"type": "double", "name": "loan_to_balance_ratio", "required":
+    true}]'
+  outputs: '[{"type": "double", "name": "churn", "required": true}]'
+  params: null
+utc_time_created: '2025-05-28 23:02:27.178488'
