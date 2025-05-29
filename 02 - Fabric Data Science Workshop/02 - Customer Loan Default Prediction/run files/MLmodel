@@ -1,0 +1,48 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.12.2
+model_size_bytes: 12068
+model_uuid: 1d1b0e5abbc44792ad5c7efa714da395
+run_id: 21cdef3e-5056-4560-ae90-b50a06e00831
+signature:
+  inputs: '[{"type": "double", "name": "LoanAmount", "required": true}, {"type": "double",
+    "name": "InterestRate", "required": true}, {"type": "double", "name": "loan_duration_days",
+    "required": true}, {"type": "double", "name": "days_to_loan_end", "required":
+    true}, {"type": "double", "name": "tenure_days", "required": true}, {"type": "double",
+    "name": "num_accounts", "required": true}, {"type": "double", "name": "avg_balance",
+    "required": true}, {"type": "double", "name": "days_since_last_balance_update",
+    "required": true}, {"type": "double", "name": "total_balance", "required": true},
+    {"type": "double", "name": "num_savings_accounts", "required": true}, {"type":
+    "double", "name": "num_checking_accounts", "required": true}, {"type": "double",
+    "name": "num_business_accounts", "required": true}, {"type": "double", "name":
+    "total_num_transactions", "required": true}, {"type": "double", "name": "total_transaction_amount",
+    "required": true}, {"type": "double", "name": "days_since_last_transaction", "required":
+    true}, {"type": "double", "name": "num_loans", "required": true}, {"type": "double",
+    "name": "total_loan_amount", "required": true}, {"type": "double", "name": "total_car_loans",
+    "required": true}, {"type": "double", "name": "total_personal_loans", "required":
+    true}, {"type": "double", "name": "total_home_loans", "required": true}, {"type":
+    "double", "name": "total_education_loans", "required": true}, {"type": "double",
+    "name": "num_cards", "required": true}, {"type": "double", "name": "num_credit_cards",
+    "required": true}, {"type": "double", "name": "num_debit_cards", "required": true},
+    {"type": "double", "name": "num_prepaid_cards", "required": true}, {"type": "double",
+    "name": "loan_to_balance_ratio", "required": true}, {"type": "double", "name":
+    "transaction_recency_score", "required": true}, {"type": "double", "name": "LoanType_Education",
+    "required": true}, {"type": "double", "name": "LoanType_Home", "required": true},
+    {"type": "double", "name": "LoanType_Personal", "required": true}, {"type": "double",
+    "name": "LoanType_Car", "required": true}]'
+  outputs: '[{"type": "double", "name": "default", "required": true}]'
+  params: null
+utc_time_created: '2025-05-28 23:57:18.031960'
