@@ -1,0 +1,10 @@
+dependencies:
+  - pip:
+      - matplotlib==3.8.0
+      - mlflow==2.12.2
+      - numpy==1.26.4
+      - openpyxl==3.0.10
+      - pandas==2.1.4
+      - scikit-learn==1.5.1
+      - pyspark==3.5.1
+      - seaborn==0.12.0
